@@ -1,0 +1,26 @@
+{
+  "name": "dataset-query",
+  "version": "1.0.0",
+  "description": "Query",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sustainablility/dataset-query.git"
+  },
+  "author": "Linbin Pang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sustainablility/dataset-query/issues"
+  },
+  "homepage": "https://github.com/sustainablility/dataset-query#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2",
+    "query-to-mongo": "^0.9.1",
+    "silly-datetime": "^0.1.2"
+  }
+}
