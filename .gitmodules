@@ -1,3 +1,6 @@
 [submodule "src/query-to-mongo"]
 	path = src/query-to-mongo
-	url = https://github.com/plbin97/query-to-mongo
+	url = https://github.com/sustainablility/query-to-mongo
+[submodule "src/microservice-communication-encryption"]
+	path = src/microservice-communication-encryption
+	url = https://github.com/sustainablility/microservice-communication-encryption.git
