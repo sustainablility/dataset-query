@@ -22,6 +22,8 @@
     "json2csv": "^4.4.1",
     "mongodb": "^3.2.2",
     "query-to-mongo": "^0.9.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "silly-datetime": "^0.1.2"
   }
 }

@@ -1,3 +1,4 @@
+let verifyDatasetTokenAndName = require('./communicateWithOtherServer/verifyDatasetTokenAndName');
 /**
  * Function for handling get request
  * @param requests
@@ -6,6 +7,8 @@
 exports.get = async (requests,response) => {
     // Parsing parameters
 
+    let dataSetToken = requests.params.datasetToken;
+
     let dataset = requests.params.dataset.split(".");
     if (dataset[1] === undefined) {
         response.send("Suffix needed");
@@ -13,6 +16,10 @@ exports.get = async (requests,response) => {
     }
     if (requests._parsedUrl.query === null) {
         response.send("Parameters needed");
+        return null;
+    }
+    if (!await verifyDatasetTokenAndName(dataSetToken, dataset[0])){
+        response.send("Token or Dataset error");
         return null;
     }
 
